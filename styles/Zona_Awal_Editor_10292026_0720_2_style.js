@@ -1,24 +1,22 @@
 var size = 0;
 var placement = 'point';
-function categories_TitikSurvey_5(feature, value, size, resolution, labelText,
+function categories_Zona_Awal_Editor_10292026_0720_2(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     switch(valueStr) {
-        case '1':
+        case 'Non-Pertanian':
             return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(255,48,0,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,3,0,0.5019607843137255)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,3,0,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case '2':
+        case 'Pertanian':
             return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(0,255,58,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,135,22,0.30196078431372547)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(0,250,41,0.5019607843137255)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -26,17 +24,17 @@ function categories_TitikSurvey_5(feature, value, size, resolution, labelText,
 			break;
     }};
 
-var style_TitikSurvey_5 = function(feature, resolution){
+var style_Zona_Awal_Editor_10292026_0720_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
     };
     
     var labelText = ""; 
-    var value = feature.get("Zoning/ Peruntukan");
+    var value = feature.get("PENGGUNAAN");
     var labelFont = "13.0px \'Arial\', sans-serif";
     var labelFill = "#323232";
-    var bufferColor = "#ffc2c2";
+    var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
     var textAlign = 'left';
     var offsetX = 8;
@@ -44,11 +42,11 @@ var style_TitikSurvey_5 = function(feature, resolution){
     var overflow = false;
     var repeat = 0;
     var placement = 'point';
-    if (feature.get("Nomor Sampel") !== null) {
-        labelText = String(feature.get("Nomor Sampel"));
+    if ("" !== null) {
+        labelText = String("");
     }
     
-    var style = categories_TitikSurvey_5(feature, value, size, resolution, labelText,
+    var style = categories_Zona_Awal_Editor_10292026_0720_2(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 

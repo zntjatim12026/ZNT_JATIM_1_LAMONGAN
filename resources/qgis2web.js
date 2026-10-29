@@ -7,17 +7,17 @@ var map = new ol.Map({
         constrainResolution: false,
         maxZoom: 28,
         minZoom: 1,
-        extent: [1282450.932168, 9176593.995711, 1336905.804245, 9235833.752994],
+        extent: [1282465.830718, 9177783.908942, 1336905.804245, 9235833.752994],
         projection: new ol.proj.Projection({
             code: 'EPSG:32748',
-            //extent: [1282450.932168, 9176593.995711, 1336905.804245, 9235833.752994],
+            //extent: [1282465.830718, 9177783.908942, 1336905.804245, 9235833.752994],
             units: 'm'
         })
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([1282450.932168, 9176593.995711, 1336905.804245, 9235833.752994], map.getSize());
+map.getView().fit([1282465.830718, 9177783.908942, 1336905.804245, 9235833.752994], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {
@@ -655,7 +655,6 @@ tapSelect.on('select', function (e) {
     container.style.display = 'none';
   }
 });
-
 
 //get container
 var topLeftContainerDiv = document.getElementById('top-left-container')
@@ -1362,7 +1361,7 @@ document.addEventListener('DOMContentLoaded', function() {
         bottomRightContainerDiv.appendChild(attributionControl);
     }
 
-                /* === MATIKAN LAYER DATA SEBELUM DIKLIK DI LEGENDA (kecuali basemap) === */
+               /* === MATIKAN LAYER DATA SEBELUM DIKLIK DI LEGENDA (kecuali basemap) === */
 (function turnOffLayersForMobile() {
   // deteksi & matikan semua layer non-basemap di layersList
   function offIfNotBase(layer) {

@@ -1,67 +1,67 @@
 var size = 0;
 var placement = 'point';
-function categories_Jalan_Lamongan_OSM_Cut_1(feature, value, size, resolution, labelText,
+function categories_Klasifikasi_Jalan_4(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement, textAlign, offsetX, offsetY, overflow, repeat) {
     var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
     switch(valueStr) {
-        case 'Jalan Akses':
+        case 'Arteri Sekunder':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(89,89,89,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,0,16,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Arteri':
+        case 'Kolektor Primer 4':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,5,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,113,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 5.699999999999999}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Kolektor Primer':
+        case 'Kolektor Sekunder':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,111,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 6.6499999999999995}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,216,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 5.699999999999999}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Kolektor Sekunder':
+        case 'Lingkungan Primer':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,170,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 5.699999999999999}),
+        stroke: new ol.style.Stroke({color: 'rgba(81,255,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.9}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Lingkungan':
+        case 'Lingkungan Sekunder':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,255,158,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.9}),
+        stroke: new ol.style.Stroke({color: 'rgba(203,120,167,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Lokal':
+        case 'Lokal Primer':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,238,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,255,252,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.8}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 			break;
 
-        case 'Jalan Setapak':
+        case 'Lokal Sekunder':
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,35,255,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
+        stroke: new ol.style.Stroke({color: 'rgba(0,161,251,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.8499999999999996}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -69,7 +69,7 @@ function categories_Jalan_Lamongan_OSM_Cut_1(feature, value, size, resolution, l
 			break;
 default:
             return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(93,207,227,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
+        stroke: new ol.style.Stroke({color: 'rgba(153,26,211,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
@@ -77,14 +77,14 @@ default:
 			break;
     }};
 
-var style_Jalan_Lamongan_OSM_Cut_1 = function(feature, resolution){
+var style_Klasifikasi_Jalan_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
     };
     
     var labelText = ""; 
-    var value = feature.get("name");
+    var value = feature.get("Fungsi");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
@@ -99,7 +99,7 @@ var style_Jalan_Lamongan_OSM_Cut_1 = function(feature, resolution){
         labelText = String("");
     }
     
-    var style = categories_Jalan_Lamongan_OSM_Cut_1(feature, value, size, resolution, labelText,
+    var style = categories_Klasifikasi_Jalan_4(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement, textAlign, offsetX, offsetY, overflow, repeat);
 
